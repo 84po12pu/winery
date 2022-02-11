@@ -1,0 +1,297 @@
+@charset "UFF-8";
+
+/* 共通＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+html {
+    font-size: 62.5%;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: #5a1b84;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* header＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+header {
+    border-top: 15px solid #7e1e6b;
+    border-bottom: 5px solid #7e1e6b;
+    height: 113px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #fff;
+}
+
+body {
+    padding-top: 113px;
+    /* fixedで固定したheaderの分下げた */
+}
+
+
+.gnavi ul {
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.gnavi li {
+    padding: 0 20px;
+}
+
+.gnavi li+li {
+    border-left: 1px solid #5a1b84;
+}
+
+h1 {
+    font-size: 3rem;
+    /* font-family: serif;
+    font-size: 4rem;
+    min-width: 288px; */
+}
+
+.big-bg {
+    position: relative;
+    height: 547px;
+    object-fit: cover;
+}
+
+.purple {
+    background-color: rgba(90, 27, 132, .5);
+    display: inline-block;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px 100px;
+}
+
+.purple p {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    /* font-size: 1.2rem; */
+}
+
+/* メイン＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+.center {
+    text-align: center;
+    margin: 30px 0 50px 0;
+}
+
+.center p {
+    font-size: 1.2rem;
+}
+
+h2 {
+    font-size: 3rem;
+    color: #7e1e6b;
+}
+
+.icon,
+.guide {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wine,
+.shop,
+.photo,
+.info {
+    text-align: center;
+    width: 225px;
+}
+
+.shop,
+.photo,
+.info {
+    margin-left: 1rem;
+}
+
+.icon h3 {
+    margin-top: 20px;
+    font-size: 1.6rem;
+}
+
+.icon p {
+    text-align: left;
+    font-size: 1.6rem;
+}
+
+.icon a {
+    color: red;
+}
+
+.guide h3 {
+    color: #7b181d;
+    font-size: 1.7rem;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.guide p {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+}
+
+.dinner,
+.glass {
+    margin-left: 45px;
+}
+
+h4 {
+    font-size: 1.4rem;
+    color: #5a1b84;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.forest {
+    height: 300px;
+    background-image: url(images/trentino.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* footer＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.yellow {
+    background-color: #eebc1f;
+    line-height: 40px;
+}
+
+.sitemap a {
+    color: #000;
+    font-size: 1.2rem;
+}
+
+small {
+    padding-right: 100px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer img {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* スマホ版＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+@media (max-width: 700px) {
+
+    .wrapper {
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+
+    header img,
+    footer img {
+        width: 160px;
+    }
+
+    .gnavi ul {
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+
+    .gnavi li+li {
+        border-left: none;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .purple {
+        padding: 1.5rem;
+    }
+
+    .purple p {
+        margin-top: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .icon,
+    .guide {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 2.3rem;
+        margin-bottom: 5px;
+    }
+
+    .wine,
+    .shop,
+    .photo,
+    .info {
+        width: 360px;
+    }
+
+    .info,
+    .photo,
+    .shop,
+    .dinner,
+    .glass {
+        margin-left: 0;
+    }
+
+    .icon h3 {
+        margin: 10px 0;
+    }
+
+    h4 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .guide h3 {
+        text-align: center;
+    }
+
+    .guide p {
+        width: 370px;
+    }
+
+    .recomend {
+        width: 1900px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    small {
+        padding-right: 50px;
+    }
+
+
+
+
+}/* 消さない */
