@@ -39,6 +39,7 @@ header {
 
 body {
     padding-top: 113px;
+    background-color: #fff;
     /* fixedで固定したheaderの分下げた */
 }
 
@@ -91,6 +92,10 @@ h1 {
 }
 
 /* メイン＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+.bgcolor {
+    background-color: #fff;
+}
+
 .center {
     text-align: center;
     margin: 30px 0 50px 0;
@@ -165,13 +170,34 @@ h4 {
 }
 
 .forest {
+    width: 100%;
+    height: 300px;
+}
+
+.forest::before {
+    content: "";
+    background-image: url(./images/trentino.jpg);
+    background-image: no-repeat;
+    background-image: center;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+}
+
+/* .forest {
     height: 300px;
     background-image: url(images/trentino.jpg);
     background-position: center;
     background-attachment: fixed;
-}
+} */
 
 /* footer＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+
 .flex {
     display: flex;
     justify-content: center;
@@ -294,4 +320,6 @@ footer img {
 
 
 
-}/* 消さない */
+}
+
+/* 消さない */
