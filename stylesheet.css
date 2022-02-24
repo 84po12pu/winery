@@ -5,6 +5,10 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    color: #333;
+}
+
 img {
     max-width: 100%;
     vertical-align: bottom;
@@ -17,38 +21,97 @@ ul {
 
 a {
     text-decoration: none;
-    color: #5a1b84;
+    color: #fff;
+    display: block;
+}
+
+a:hover {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+}
+
+h2 {
+    font-size: 2.7rem;
+    margin-bottom: 30px;
+}
+
+.reason h2,
+.quality h2 {
+    font-family: serif;
+    font-weight: 500;
+}
+
+h3 {
+    color: #7e1e6b;
 }
 
 .wrapper {
-    max-width: 1200px;
+    max-width: 1260px;
     margin: 0 auto;
+    padding: 0 30px;
 }
 
-/* header＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.br-480 {
+    display: none;
+}
+
+
+/* ファーストビュー＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+.hero {
+    text-align: center;
+    background-color: #280402;
+}
+
+.title {
+    font-family: 'Dancing Script', cursive;
+    position: absolute;
+    top: 4%;
+    left: 15%;
+    font-size: 7rem;
+    color: #fff;
+    transform: rotate(-10deg);
+    line-height: 1;
+}
+
+
+/* header＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 header {
-    border-top: 15px solid #7e1e6b;
-    border-bottom: 5px solid #7e1e6b;
-    height: 113px;
-    position: fixed;
+    background-color: #483346;
+    position: sticky;
     top: 0;
-    z-index: 1;
-    width: 100%;
-    background-color: #fff;
 }
 
-body {
-    padding-top: 113px;
-    background-color: #fff;
-    /* fixedで固定したheaderの分下げた */
+h1 {
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+    font-size: 6rem;
 }
 
+h1::before {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-image: url(images/logo.png);
+    background-size: contain;
+    vertical-align: bottom;
+    margin-right: 10px;
+}
+
+.gflex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 .gnavi ul {
-    justify-content: center;
-    font-size: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+    font-size: 2.4rem;
 }
 
 .gnavi li {
@@ -56,62 +119,36 @@ body {
 }
 
 .gnavi li+li {
-    border-left: 1px solid #5a1b84;
+    border-left: 1px solid #fff;
 }
 
-h1 {
-    font-size: 3rem;
-    /* font-family: serif;
-    font-size: 4rem;
-    min-width: 288px; */
-}
-
-.big-bg {
-    position: relative;
-    height: 547px;
-    object-fit: cover;
-}
-
-.purple {
-    background-color: rgba(90, 27, 132, .5);
-    display: inline-block;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    border-radius: 10px;
-    padding: 30px 100px;
-}
-
-.purple p {
-    margin-top: 1rem;
-    font-size: 1.6rem;
-    /* font-size: 1.2rem; */
-}
 
 /* メイン＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
-.bgcolor {
-    background-color: #fff;
+
+.bg-color {
+    background-color: #f1ede6;
 }
 
-.center {
+.intro {
     text-align: center;
-    margin: 30px 0 50px 0;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.center p {
-    font-size: 1.2rem;
-}
-
-h2 {
-    font-size: 3rem;
+.intro h2 {
+    margin-bottom: 10px;
     color: #7e1e6b;
+    font-weight: bold;
+    font-size: 3rem;
 }
 
-.icon,
-.guide {
+.intro p {
+    font-size: 1.6rem;
+    text-align: left;
+}
+
+.icon {
     display: flex;
     justify-content: space-between;
 }
@@ -132,7 +169,7 @@ h2 {
 
 .icon h3 {
     margin-top: 20px;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 .icon p {
@@ -144,182 +181,324 @@ h2 {
     color: red;
 }
 
-.guide h3 {
-    color: #7b181d;
-    font-size: 1.7rem;
-    text-align: left;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.icon a:hover {
+    transform: scale(1.1, 1);
+    text-indent: 1rem;
 }
 
-.guide p {
-    font-size: 1.4rem;
-    margin-bottom: 30px;
-}
-
-.dinner,
-.glass {
-    margin-left: 45px;
-}
-
-h4 {
-    font-size: 1.4rem;
-    color: #5a1b84;
-    margin-top: 50px;
-    margin-bottom: 10px;
-}
-
-.forest {
-    width: 100%;
-    height: 300px;
-}
-
-.forest::before {
-    content: "";
-    background-image: url(./images/trentino.jpg);
-    background-image: no-repeat;
-    background-image: center;
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100vh;
-}
-
-/* .forest {
-    height: 300px;
-    background-image: url(images/trentino.jpg);
-    background-position: center;
-    background-attachment: fixed;
-} */
-
-/* footer＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
-
-
-.flex {
+.reason {
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 100px 0;
 }
 
-.yellow {
-    background-color: #eebc1f;
-    line-height: 40px;
+.reason-right {
+    width: 40%;
+    margin-left: 100px;
+    max-width: 450px;
+}
+
+.reason-left {
+    width: 40%;
+    max-width: 450px;
+}
+
+.reason h2 {
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.reason p {
+    font-size: 1.8rem;
+    margin-bottom: 50px;
+}
+
+.button {
+    background-color: #7e1e6b;
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 20px;
+    font-size: 2.5rem;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.recommend {
+    background-color: #483346;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.recommend h2 {
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+}
+
+.recommend p {
+    color: #fff;
+    font-size: 1.6rem;
+    margin-bottom: 50px;
+}
+
+.recommend a {
+    display: inline-block;
+}
+
+.recommend a:hover {
+    transform: translateY(-20px);
+}
+
+.recommend a::after {
+    content: '△ click';
+    font-size: 1.8rem;
+    display: block;
+}
+
+.recommend a+a {
+    margin-left: 150px;
+}
+
+.bg {
+    height: 400px;
+}
+
+.bg::before {
+    content:"";
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    width:100%;
+    height:100vh;
+    background-image:url(images/vineyard.jpg);
+    background-repeat:no-repeat;
+    background-position:center bottom;
+    background-size:cover;
+}
+
+
+.quality {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: #f1ede6;
+}
+
+.quality p {
+    font-size: 1.6rem;
+}
+
+.quality img {
+    width: 50%;
+}
+
+.sentence {
+    width: 50%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.flex:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+
+/* footer＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+.sitemap {
+    margin-left: 100px;
 }
 
 .sitemap a {
-    color: #000;
+    color: #fff;
     font-size: 1.2rem;
 }
 
 small {
-    padding-right: 100px;
+    color: #fff;
 }
 
 footer {
     text-align: center;
+    background-color: #483346;
+    padding: 1rem 0;
 }
 
-footer img {
-    margin-top: 20px;
-    margin-bottom: 40px;
+footer .flex {
+    justify-content: center;
 }
+
+
 
 /* スマホ版＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 
-@media (max-width: 700px) {
+@media (max-width: 950px) {
 
-    .wrapper {
-        padding-right: 3rem;
-        padding-left: 3rem;
+    .title {
+        font-size: 4.5rem;
+        top: 3%;
+        left: 12%;
     }
 
-    header img,
-    footer img {
-        width: 160px;
+    .gflex {
+        flex-direction: column;
+        padding-top: 10px;
     }
 
-    .gnavi ul {
-        flex-wrap: wrap;
-        align-items: center;
-        font-size: 1.5rem;
+    .gnavi li {
+        padding: 0 10px;
+        margin: 20px 0;
     }
 
-    .gnavi li+li {
-        border-left: none;
+    .reason-right {
+        margin-left: 20px;
+    }
+
+    .reason p {
+        font-size: 1.6rem;
+    }
+
+    .recommend a+a {
+        margin-left: 50px;
+    }
+
+}
+
+/* 消さない */
+
+
+
+@media (max-width: 600px) {
+
+    .title {
+        font-size: 3rem;
     }
 
     h1 {
-        font-size: 1.8rem;
+        font-size: 2.7rem;
     }
 
-    .purple {
-        padding: 1.5rem;
+    h1::before {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
     }
 
-    .purple p {
-        margin-top: 1.5rem;
-        font-size: 1rem;
-    }
-
-    .icon,
-    .guide {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
+    .gnavi ul {
+        font-size: 1.6rem;
     }
 
     h2 {
-        font-size: 2.3rem;
-        margin-bottom: 5px;
+        font-size: 2.1rem;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .intro h2 {
+        font-size: 2.5rem;
     }
 
     .wine,
     .shop,
     .photo,
     .info {
-        width: 360px;
+        width: auto;
     }
 
     .info,
     .photo,
-    .shop,
-    .dinner,
-    .glass {
+    .shop {
         margin-left: 0;
+        margin-top: 20px;
     }
+
+    .icon {
+        flex-direction: column;
+    }
+
 
     .icon h3 {
         margin: 10px 0;
     }
 
-    h4 {
-        font-size: 2.5rem;
-        text-align: center;
+    .reason {
+        flex-direction: column;
+        padding: 100px 30px;
     }
 
-    .guide h3 {
-        text-align: center;
+    .reason-right {
+        width: auto;
+        margin-left: 0;
     }
 
-    .guide p {
-        width: 370px;
+    .reason-left {
+        width: auto;
+        max-width: 100%;
     }
 
-    .recomend {
-        width: 1900px;
-        height: 150px;
-        object-fit: cover;
+    .button {
+        font-size: 1.8rem;
+        width: 180px;
+    }
+
+    .recommend a+a {
+        margin-left: 10px;
+    }
+
+    .recommend a {
+        width: 15%;
+    }
+
+    .quality .flex {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .quality img {
+        width: auto;
+        margin-bottom: 10px;
+    }
+
+    .sentence {
+        width: auto;
+    }
+
+    footer .flex {
+        flex-direction: column;
     }
 
     small {
-        padding-right: 50px;
+        margin-bottom: 20px;
     }
 
+    .sitemap {
+        margin-left: 0;
+    }
 
+}
 
+/* 消さない */
 
+@media (max-width: 480px) {
+    .br-480 {
+        display: block;
+    }
+
+    .title {
+        font-size: 2.5rem;
+        top: 2%;
+        left: 50%;
+        transform: translate(-50%);
+    }
 }
 
 /* 消さない */
