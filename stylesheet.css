@@ -305,7 +305,7 @@ h1::before {
     width: 50%;
     max-width: 600px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 3rem;
 }
 
 .flex:nth-child(2) {
@@ -330,7 +330,7 @@ small {
 footer {
     text-align: center;
     background-color: #483346;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
 }
 
 footer .flex {
@@ -369,6 +369,15 @@ footer .flex {
 
     .recommend a+a {
         margin-left: 50px;
+    }
+
+    .sentence h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .sentence p {
+        font-size: 1.4rem;
     }
 
 }
