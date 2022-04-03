@@ -7,6 +7,7 @@ html {
 
 body {
     color: #333;
+    font-family: sans-serif;
 }
 
 img {
@@ -40,10 +41,6 @@ h2 {
     font-weight: 500;
 }
 
-h3 {
-    color: #7e1e6b;
-}
-
 .wrapper {
     max-width: 1260px;
     margin: 0 auto;
@@ -67,7 +64,7 @@ h3 {
 }
 
 .title {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', cursive, serif;
     position: absolute;
     top: 4%;
     left: 15%;
@@ -87,7 +84,7 @@ header {
 
 h1 {
     color: #fff;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', cursive, serif;
     font-size: 6rem;
 }
 
@@ -116,6 +113,7 @@ h1::before {
 
 .gnavi li {
     padding: 0 20px;
+    font-family: serif;
 }
 
 .gnavi li+li {
@@ -137,10 +135,11 @@ h1::before {
 }
 
 .intro h2 {
+    font-family: serif;
     margin-bottom: 10px;
     color: #7e1e6b;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2.8rem;
 }
 
 .intro p {
@@ -168,8 +167,11 @@ h1::before {
 }
 
 .icon h3 {
+    font-family: serif;
+    font-weight: bold;
+    color: #7e1e6b;
     margin-top: 20px;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 .icon p {
@@ -239,7 +241,7 @@ h1::before {
 
 .recommend h2 {
     color: #fff;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', cursive, serif;
     font-size: 3.5rem;
 }
 
