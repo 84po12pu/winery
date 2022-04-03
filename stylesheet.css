@@ -130,8 +130,7 @@ h1::before {
 .intro {
     text-align: center;
     margin: 0 auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 100px 50px 100px;
 }
 
 .intro h2 {
@@ -150,6 +149,8 @@ h1::before {
 .icon {
     display: flex;
     justify-content: space-between;
+    padding-right: 100px;
+    padding-left: 100px;
 }
 
 .wine,
@@ -359,6 +360,12 @@ footer .flex {
     .gnavi li {
         padding: 0 10px;
         margin: 20px 0;
+    }
+
+    .intro,
+    .icon {
+        padding-right: 30px;
+        padding-left: 30px;
     }
 
     .reason-right {
