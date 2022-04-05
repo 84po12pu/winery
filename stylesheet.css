@@ -60,6 +60,7 @@ h2 {
 /* ファーストビュー＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 .hero {
     text-align: center;
+    /* 大きい画面のため */
     background-color: #280402;
 }
 
@@ -289,10 +290,7 @@ h1::before {
     background-size:cover;
 }
 
-
 .quality {
-    max-width: 1920px;
-    margin: 0 auto;
     background-color: #f1ede6;
 }
 
@@ -302,6 +300,11 @@ h1::before {
 
 .quality img {
     width: 50%;
+}
+
+.quality .flex {
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .sentence {
@@ -317,9 +320,6 @@ h1::before {
 
 
 /* footer＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
-.sitemap {
-    margin-left: 100px;
-}
 
 .sitemap a {
     color: #fff;
@@ -328,6 +328,8 @@ h1::before {
 
 small {
     color: #fff;
+    font-size: 11px;
+    margin-left: 100px;
 }
 
 footer {
@@ -495,10 +497,10 @@ footer .flex {
     }
 
     small {
-        margin-bottom: 20px;
+        margin-top: 20px;
     }
 
-    .sitemap {
+    small {
         margin-left: 0;
     }
 
