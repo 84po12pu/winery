@@ -31,14 +31,9 @@ a:hover {
 }
 
 h2 {
-    font-size: 2.7rem;
     margin-bottom: 30px;
-}
-
-.reason h2,
-.quality h2 {
     font-family: serif;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .wrapper {
@@ -135,10 +130,8 @@ h1::before {
 }
 
 .intro h2 {
-    font-family: serif;
     margin-bottom: 10px;
     color: #7e1e6b;
-    font-weight: bold;
     font-size: 2.8rem;
 }
 
@@ -212,6 +205,8 @@ h1::before {
     width: fit-content;
     margin-right: auto;
     margin-left: auto;
+    color: #7e1e6b;
+    font-size: 2.6rem;
 }
 
 .reason p {
@@ -276,22 +271,26 @@ h1::before {
 }
 
 .bg::before {
-    content:"";
-    display:block;
-    position:fixed;
-    top:0;
-    left:0;
-    z-index:-1;
-    width:100%;
-    height:100vh;
-    background-image:url(images/vineyard.jpg);
-    background-repeat:no-repeat;
-    background-position:center bottom;
-    background-size:cover;
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/vineyard.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
 }
 
 .quality {
     background-color: #f1ede6;
+}
+
+.quality h2 {
+    font-size: 2.7rem;
 }
 
 .quality p {
@@ -328,7 +327,7 @@ h1::before {
 
 small {
     color: #fff;
-    font-size: 11px;
+    font-size: 1.1rem;
     margin-left: 100px;
 }
 
@@ -370,6 +369,10 @@ footer .flex {
         padding-left: 30px;
     }
 
+    .icon h3 {
+        font-size: 1.9rem;
+    }
+
     .reason-right {
         margin-left: 20px;
     }
@@ -382,7 +385,7 @@ footer .flex {
         margin-left: 50px;
     }
 
-    .sentence h2 {
+    .quality h2 {
         font-size: 2rem;
         margin-bottom: 15px;
     }
@@ -418,9 +421,12 @@ footer .flex {
     }
 
     h2 {
-        font-size: 2.1rem;
         margin-top: 10px;
         margin-bottom: 20px;
+    }
+
+    .reason h2 {
+        font-size: 2.1rem;
     }
 
     .intro h2 {
