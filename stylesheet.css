@@ -1,4 +1,4 @@
-@charset "UFF-8";
+@charset "UTF-8";
 
 /* 共通＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 html {
@@ -52,6 +52,7 @@ h2 {
 }
 
 
+
 /* ファーストビュー＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 .hero {
     text-align: center;
@@ -69,6 +70,7 @@ h2 {
     transform: rotate(-10deg);
     line-height: 1;
 }
+
 
 
 /* header＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
@@ -117,8 +119,8 @@ h1::before {
 }
 
 
-/* メイン＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 
+/* メイン＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 .bg-color {
     background-color: #f1ede6;
 }
@@ -266,6 +268,7 @@ h1::before {
     margin-left: 150px;
 }
 
+/* パララックス */
 .bg {
     height: 400px;
 }
@@ -316,6 +319,7 @@ h1::before {
 .flex:nth-child(2) {
     flex-direction: row-reverse;
 }
+
 
 
 /* footer＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
@@ -394,9 +398,9 @@ footer .flex {
         font-size: 1.4rem;
     }
 
-}
+}/* 950pxここまで */
 
-/* 消さない */
+
 
 
 
@@ -504,17 +508,15 @@ footer .flex {
 
     small {
         margin-top: 20px;
-    }
-
-    small {
         margin-left: 0;
     }
 
-}
+}/* 600pxここまで */
 
-/* 消さない */
+
 
 @media (max-width: 480px) {
+
     .br-480 {
         display: block;
     }
@@ -525,6 +527,5 @@ footer .flex {
         left: 50%;
         transform: translate(-50%);
     }
-}
-
-/* 消さない */
+    
+}/* 480pxここまで */
